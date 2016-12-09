@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_ui2"
+
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    tools:context="edu.upc.eetac.dsa.calculadora2.UI2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial"
+        android:layout_marginLeft="120dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/historialgordo"
+
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/repeat"
+        android:hint="Escollir càlcul (n. fila)"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="74dp"
+        android:layout_width="wrap_content"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="250dp"
+        android:id="@+id/retorna"
+        android:text="Retorna"
+        android:onClick="retrn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/borra"
+        android:text="Esborrar historial"
+        android:onClick="borra"/>
+
+</RelativeLayout>

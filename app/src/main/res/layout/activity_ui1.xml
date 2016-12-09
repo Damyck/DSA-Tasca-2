@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ui1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.upc.eetac.dsa.calculadora2.UI1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“Introduïu 2 valors numèrics enters i una operació. Després cliqueu a “Resultat”"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/n1"
+        android:hint="0"
+        android:layout_marginBottom="53dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/n2"
+        android:hint="0"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginBottom="74dp"
+        android:layout_width="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/result"
+        android:hint="0"
+        android:numeric="decimal|integer|signed"
+         />
+
+    <RadioGroup
+        android:layout_width="50dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp">
+
+
+        <RadioButton
+            android:id="@+id/suma"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="+"
+            android:onClick="getOp"/>
+        <RadioButton
+            android:id="@+id/resta"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="-"
+            android:onClick="getOp"/>
+        <RadioButton
+            android:id="@+id/multiplicacion"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="x"
+            android:onClick="getOp"/>
+        <RadioButton
+            android:id="@+id/division"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="/"
+            android:onClick="getOp"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="229dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iniciar"
+        android:text="Resultat"
+        android:onClick="calculate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/borrar"
+        android:text="esborrar"
+        android:onClick="erase"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="316dp"
+        android:id="@+id/history"
+        android:text="Historial"
+        android:onClick="history"/>
+</RelativeLayout>
