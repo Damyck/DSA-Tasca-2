@@ -69,7 +69,7 @@ public class UI2 extends AppCompatActivity {
 
 
         Intent inb1 = new Intent(UI2.this, UI1.class);
-        Intent.putExtra("lane", s);
+        inb1.putExtra("lane", s);
         startActivity(inb1);
 
 
@@ -78,7 +78,7 @@ public class UI2 extends AppCompatActivity {
 
     public void borra(View view){
         Intent inb1 = new Intent(UI2.this, UI3.class);
-        Intent.putStringArrayListExtra("history", (ArrayList<String>) history);
+        inb1.putStringArrayListExtra("history", (ArrayList<String>) history);
         startActivity(inb1);
     }
 

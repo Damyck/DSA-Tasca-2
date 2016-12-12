@@ -189,7 +189,7 @@ public class UI1 extends AppCompatActivity {
 
     public void history(View view){
         Intent inb1 = new Intent(UI1.this, UI2.class);
-        Intent.putStringArrayListExtra("history", (ArrayList<String>) history);
+        inb1.putStringArrayListExtra("history", (ArrayList<String>) history);
         startActivity(inb1);
 
 

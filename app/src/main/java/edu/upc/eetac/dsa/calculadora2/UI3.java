@@ -54,7 +54,7 @@ public class UI3 extends AppCompatActivity {
     public void si(View view){
         Intent inb1 = new Intent(UI3.this, UI1.class);
         history.clear();
-        Intent.putStringArrayListExtra("history", (ArrayList<String>) history);
+        inb1.putStringArrayListExtra("history", (ArrayList<String>) history);
         startActivity(inb1);
 
 
@@ -62,7 +62,7 @@ public class UI3 extends AppCompatActivity {
 
     public void no(View view){
         Intent inb1 = new Intent(UI3.this, UI2.class);
-        Intent.putStringArrayListExtra("history", (ArrayList<String>) history);
+        inb1.putStringArrayListExtra("history", (ArrayList<String>) history);
         startActivity(inb1);
     }
 
